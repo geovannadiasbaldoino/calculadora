@@ -1,0 +1,25 @@
+nav{
+    width: 500px;
+    height: 450px;
+    background-color: aquamarine;
+    padding: 5px 20px;
+    margin: auto;
+    border-radius: 40px;
+}
+h1{
+    text-align: center;
+}
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+button{
+    height: 45px;
+}
+input{
+    align-items: center;
+    width: 480px;
+    height: 40px;
+    margin-bottom: 30px;
+}
