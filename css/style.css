@@ -1,14 +1,109 @@
-nav{
-    width: 500px;
-    height: 450px;
-    background-color: aquamarine;
-    padding: 5px 20px;
-    margin: auto;
-    border-radius: 40px;
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #fce4ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#corpo{
+    background-color: #f8bbd0;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 h1{
     text-align: center;
+    color: #880e4f;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
 }
+#visor{
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    border: 2px solid #f48fb1;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    text-align: right;
+    padding: 10px 15px;
+    color: #880e4f;
+    margin-bottom: 20px;
+    outline: none;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+button{
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:active{
+    transform: scale(0.95);
+}
+.n{
+    background-color: #ffffff;
+    color: #ad1457;
+}
+.n:hover{
+    background-color: #fff0f5;
+}
+.operador{
+    background-color: #f48fb1;
+    color: #ffffff;
+}
+.operador:hover{
+    background-color: #f06292;
+}
+.operador img {
+    width: 24px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+.soma{
+    background-color: #f48fb1;
+    color: #ffffff;
+    grid-row: span 2;
+    height: 100%;
+}
+.soma:hover{
+    background-color: #f06292;
+}
+.igual{
+    background-color: #e91e63;
+    color: #ffffff;
+    grid-column: span 2;
+    height: 55px;
+}
+.igual:hover{
+    background-color: #d81b60;
+}
+
+
+
+
+
+
+
+
+
 .teclado {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

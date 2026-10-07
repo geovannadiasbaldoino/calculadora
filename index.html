@@ -12,33 +12,33 @@
         <input type="text" id="visor">
 
         <div class="teclado">
-            <button onclick="corrigir()">C</button>
-            <button onclick="apagar()">#</button>
-            <button onclick="percentagem()">%</button>
-            <button onclick="dividir()">÷</button>
+            <button class="operador" data-acao="limpar">C</button>
+            <button class="operador" data-acao="apagar">
+                <img src="https://images.icon-icons.com/1875/PNG/96/delete_120224.png" alt="apagar">
+            </button>
+            <button class="operador" data-val="/">%</button>
+            <button class="operador" data-val="/">÷</button>
 
-            <button onclick="adicionar('7')">7</button>
-            <button onclick="adicionar('8')">8</button>
-            <button onclick="adicionar('9')">9</button>
-            <button onclick="multiplicar()">x</button>
+            <button class="n" data-val="7">7</button>
+            <button class="n" data-val="8">8</button>
+            <button class="n" data-val="9">9</button>
+            <button class="operador" data-val="*">x</button>
 
-            <button onclick="adicionar('4')">4</button>
-            <button onclick="adicionar('5')">5</button>
-            <button onclick="adicionar('6')">6</button>
-            <button onclick="subtrair()">-</button>
+            <button class="n" data-val="4">4</button>
+            <button class="n" data-val="5">5</button>
+            <button class="n" data-val="6">6</button>
+            <button class="operador" data-val="-">-</button>
 
-            <button onclick="adicionar('1')">1</button>
-            <button onclick="adicionar('2')">2</button>
-            <button onclick="adicionar('3')">3</button>
-            <button onclick="somar()">+</button>
+            <button class="n" data-val="1">1</button>
+            <button class="n" data-val="2">2</button>
+            <button class="n" data-val="3">3</button>
+            <button class="soma" data-val="+">+</button>
 
-            <button onclick="adicionar('0')">0</button>
-            <button onclick="resultado()">=</button>
-            
+            <button class="n" data-val="0">0</button>
+            <button class="igual" data-acao="calcular">=</button>
         </div>
 
     </nav>
-
 
     <script src="js/script.js"></script>
 </body>
